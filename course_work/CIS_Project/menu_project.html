@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Gamers Lounge-Menu</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!--  Header  -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="#hero">Gamers Lounge</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>  
+          <li><a class="nav-link scrollto" href="Cart.html">Cart<i class="bi bi-bag cart"><span>0</span></i></a></li>
+
+          
+         
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!--  hero Section  -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to the <span> Gamers Lounge</span></h1>
+          <h2>Best place for Gamers to chill in!</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!--  About Section  -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>The newest old school gamers Lounge in the city </h3>
+            <p class="fst-italic">
+             A combination between Arcade and modren video games to provide a spical experience for the games lovers
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> One place for many people share the same passion </li>
+              <li><i class="bi bi-check-circle"></i>Many activities for the visitors</li>
+              <li><i class="bi bi-check-circle"></i>  A lot of options in our menu, to meet everyone's taste </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!--  Menu Section  -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter=".filter-Appetizers">Appetizers</li>
+              <li data-filter=".filter-Main-course">Main-course</li>
+              <li data-filter=".filter-Dessert">Dessert</li>
+              <li data-filter=".filter-Drinks">Drinks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+
+          <div class="col-lg-6 menu-item filter-Main-course ">
+            <img src="assets/img/menu/meatballs-with-mashed-potato.jpg" class="menu-img " alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart1" > <span class="dish-title">Meatballs with mashed potatos <i class="bi bi-bag-plus"></i></span></button>
+                <span class="dish-price">35 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Minced beef, spical souce, mashed potatos 
+            </div>
+          </div>
+          
+
+          <div class="col-lg-6 menu-item filter-Main-course">
+            <img src="assets/img/menu/crispy-chicken.jpg" class="menu-img " alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart2"> <span class="dish-title">crispy checkin burger <i class="bi bi-bag-plus"></i></span></button>
+                <span class="dish-price">35 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+             Crispy fried Chicken breast,french fries
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Main-course">
+            <img src="assets/img/menu/Pizza.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart3"> <span class="dish-title">BBQ checkin Pizza <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">40 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+              A BBQ Checkin American Pizza
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Appetizers">
+            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart4"> <span class="dish-title">Caesar Salad <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">30 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+               A delicate Caesar Salad, with checkin pieces
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Dessert">
+            <img src="assets/img/menu/banana-cake.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart5"> <span class="dish-title">Banana cake <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">22 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+              Vanilla Cake, with banana cream, and chocolate souce
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Dessert">
+            <img src="assets/img/menu/Chocolate-Ice-Cream.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart6"> <span class="dish-title">Chocolate Ice Cream <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">15 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Chocolate Ice Cream, Chocolate pieces
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Appetizers">
+            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart7"> <span class="dish-title">Greek Salad <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">30 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Dessert">
+            <img src="assets/img/menu/Soufflé.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart8"> <span class="dish-title">Chocolate Soufflé <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">26 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Chocolate stuffed cake  
+           </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Drinks">
+            <img src="assets/img/menu/orange-jouce.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart9"> <span class="dish-title">Orange juice <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">18 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Natural Orange juice
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Drinks">
+            <img src="assets/img/menu/lemon-jouce.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart10"> <span class="dish-title">Lemon juice <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">18 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Natural Lemon juice
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Drinks">
+            <img src="assets/img/menu/soda.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart11"> <span class="dish-title">Soda <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">10 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Sevral types of Soda, with free refill
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Drinks">
+            <img src="assets/img/menu/Coffee.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+                <button onclick="myalert()" class="btn add-cart cart12"> <span class="dish-title">Black Coffee <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">12 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Black Coffee
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Drinks">
+            <img src="assets/img/menu/latte.jpg" class="menu-img" alt="">
+            <div onclick="myalert()" class="menu-content">
+                <button class="btn add-cart cart13"> <span class="dish-title">Coffee latte <i class="bi bi-bag-plus"></i></span></button><span class="dish-price">16 SAR</span>
+            </div>
+            <div class="menu-ingredients">
+                Coffee latte
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+    
+    <!--cart section-->
+    
+
+
+    <!-- end cart section-->
+    
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

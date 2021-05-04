@@ -1,0 +1,36 @@
+
+    .navbar {
+        background-color: #091D34;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .jumbotron { 
+        background-color: #236AB9;
+    }
+
+    .jumbotron h1 {
+        color: #609CE1;
+
+    }
+    .jumbotron p h3{
+        color: #091D34;
+    }
+
+    
+    footer {
+      background-color: #091D34;
+      padding: 25px;
+      height: 100px;
+    }
+
+    form{
+        margin: 100px;
+    }
+
+    body{
+        background-color: #E1ECF9;
+    }
+    
+    
+  

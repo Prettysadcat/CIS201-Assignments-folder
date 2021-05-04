@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Basic calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+		<style>
+			
+			
+			p {
+				border: 1px solid navy;
+				height: 30px;
+				width: 220px;
+				background-color: white;
+				margin: 10px;
+			}
+			table {
+				background-color: gray;
+               align-self: center;
+			}
+			
+			button{
+				background-color: lightgray;
+				width: 10em;  
+				height: 3em;
+				font-size:15px;
+				}
+			.Cal{
+			width: 20em;  
+			}
+			
+		</style>
+		<script>
+			function printNumber(x){
+				document.getElementById('mathOper').innerHTML += x;
+			}
+			
+			function printOp(x){
+				document.getElementById('mathOper').innerHTML += x;
+			}
+			
+			function calculate(){
+				var mathString = document.getElementById('mathOper').textContent;
+				document.getElementById('result').innerHTML = eval(mathString);
+			
+			}
+			function refreshPage(){
+                window.location.reload();
+            } 
+		</script>
+	</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Course Work</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about_me.html">About me</a></li>
+        <li><a href="#">Basic Calculator</a></li>
+        <li><a href="CIS_Project/menu_project.html">Menu project</a></li>
+        <li><a href="contact_me.html">Contact me page</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+      <h1>Basic Calculator</h1>
+    
+  </div>
+</div>
+
+
+	
+	
+		<table>
+		    <tr>
+				
+				
+			</tr>
+			<tr>
+				<th colspan="2" ><p id="mathOper"> </p> </th>
+				<th colspan="2" ><p id="result"> ... </p> </th>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(1)"> 1 </button> </td>
+				<td> <button onclick="printNumber(2)"> 2 </button> </td>
+			    <td> <button onclick="printNumber(3)"> 3 </button> </td>
+				<td> <button style="  background-color: #236AB9;" onclick="printOp('+')"> + </button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(4)"> 4 </button> </td>
+				<td> <button onclick="printNumber(5)"> 5 </button> </td>
+			    <td> <button onclick="printNumber(6)"> 6 </button> </td>
+				<td> <button style=" background-color: #236AB9;" onclick="printOp('-')"> - </button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(7)"> 7 </button> </td>
+				<td> <button onclick="printNumber(8)"> 8 </button> </td>
+			    <td> <button onclick="printNumber(9)"> 9 </button> </td>
+				<td> <button style=" background-color: #236AB9;" onclick="printOp('*')"> x </button> </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2"> <button onclick="printNumber(0)"> 0 </button> </td>
+				<td> <button style=" background-color: #236AB9;" onclick="printOp('/')"> / </button> </td>
+			</tr>
+			<tr>
+				<td> <button type="button" style=" background-color: #609CE1;" onClick="refreshPage()">c</button> </td>
+				<td></td>
+				<td colspan="2"> <button class="Cal" style=" background-color: #609CE1;" onclick="calculate()"> Calculate </button> </td>
+			</tr>
+			
+		</table>
+
+
+    </body>
+</html>
